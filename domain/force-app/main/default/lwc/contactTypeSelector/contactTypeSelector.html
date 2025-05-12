@@ -1,0 +1,27 @@
+<template>
+    
+  <lightning-card title="Contact Type Aggregation">
+    <template if:true={data}>
+      <lightning-datatable
+        data-id="myTable"
+        key-field="id"
+        data={data}
+        columns={columns}
+        onrowselection={handleRowSelection} 
+        errors={errors}>
+
+      </lightning-datatable>
+
+      <lightning-button
+        variant="brand"
+        label="Submit Selection"
+        title="Submit"
+        onclick={handleSubmit}
+        class="slds-m-top_medium">
+      </lightning-button>
+    </template>
+    <template if:true={error}>
+      <div class="slds-text-color_error">{error}</div>
+    </template>
+  </lightning-card>  
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>number_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>Number_of_Contacts__c &gt; 2</errorConditionFormula>
+    <errorMessage>Number of Contacts cannot exceed 5.</errorMessage>
+</ValidationRule>
